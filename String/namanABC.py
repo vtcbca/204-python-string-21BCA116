@@ -1,8 +1,11 @@
-n=input("Enter any sentence:")
-if(n==n[::-1]):
-    print("The string is pelindrome")
-else:
-    print("The string is not a pelindrome")
-l=n.split()
+a=input("Enter any string : ")
+l=list(a.split ())
+c=0
+l1=[]
 for i in l:
-    print(i)
+    b=i[::-1]
+    if i==b:
+        l1.append(i)
+        print (i)
+        c=c+1
+print("Total {} palindrom word in string {}".format(c,l1))
